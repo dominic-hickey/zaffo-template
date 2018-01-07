@@ -1,0 +1,121 @@
+<!-- Section: About Game 2 -->
+<div class="section  section--light  section__about-game  section__about-game--2">
+	<div class="container">
+
+
+		<!-- Section Title -->
+		<div class="section-title">
+			<div class="row  row--gutters  row--sb">
+				<div class="col  col--half">
+					{{widget('content', 'about-game-title', { content: '
+						<h2>Incredible weekly prizes</h2>
+					'})|raw}}
+				</div>
+				<div class="col  col--half">
+					{{widget('content', 'about-game-description', { content: '
+						<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit mae. Cenas ipsum neque, tempor at tincidunt eget, sollicitudin nec enim. Morbi eget nulla tempus.</h6>
+					'})|raw}}
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Winning Prizes -->
+		<div class="winning-prizes">
+			<div class="row  row--gutters  row--flex-col">
+				<div class="col  col--third">
+					<div class="card  card--align-center  card--winner">
+						<div class="card__text">
+							<div class="sub-title  card__sub-title">
+								{{widget('content', 'about-game-col1-prize', { content: '
+									<h5>Winning prize</h5>
+								'})|raw}}
+							</div>
+							{{widget('content', 'about-game-col1-text', { content: '
+								<h4>Match all 6 numbers</h4>
+								<h6>To win £25,000</h6>
+							'})|raw}}
+							<div class="button-group">
+								<div class="button-group__button  button-group__button--winner">
+									{{widget('button', 'about-game--col1-button', {
+										'text': 'Play now',
+										'action': 'internal',
+										'url': '/play'
+									})|raw}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col  col--third">
+					<div class="card  card--align-center">
+						<div class="card__text">
+							<div class="sub-title  card__sub-title">
+								{{widget('content', 'about-game-col2-prize', { content: '
+									<h5>2nd prize</h5>
+								'})|raw}}
+							</div>
+							{{widget('content', 'about-game-col2-text', { content: '
+								<h4>Match first or last 5 numbers</h4>
+								<h6>To win £1,000</h6>
+							'})|raw}}
+							<div class="button-group">
+								<div class="button-group__button">
+									{{widget('button', 'about-game--col2-button', {
+										'text': 'Play now',
+										'action': 'internal',
+										'url': '/play'
+									})|raw}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col  col--third">
+					<div class="card  card--align-center">
+						<div class="card__text">
+							<div class="sub-title  card__sub-title">
+								{{widget('content', 'about-game-col3-prize', { content: '
+									<h5>3rd prize</h5>
+								'})|raw}}
+							</div>
+							{{widget('content', 'about-game-col3-text', { content: '
+								<h4>Match first or last 4 numbers</h4>
+								<h6>To win £100</h6>
+							'})|raw}}
+							<div class="button-group">
+								<div class="button-group__button">
+									{{widget('button', 'about-game--col3-button', {
+										'text': 'Play now',
+										'action': 'internal',
+										'url': '/play'
+									})|raw}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- The Rules -->
+		<div class="additional-text">
+			<div class="row  row--gutters  row--aic  row--2col">
+				<div class="col  col--half">
+					{{widget('image', 'about-game-image1', {
+						'src': asset('images/content-image2.jpg')
+					})|raw}}
+				</div>
+				<div class="col  col--half  col--offset-left">
+					{{widget('content', 'about-game-text1', { content: '
+						<h3>The rules</h3>
+						<p>Vestibulum nec sapien et ipsum imperdiet rhoncus. Nullam egestas ultricies vehicula. Pellentesque lobortis blandit nibh, vel interdum ipsum blandit consequat. Vestibulum nec sapien et ipsum.</p>
+					'})|raw}}
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>

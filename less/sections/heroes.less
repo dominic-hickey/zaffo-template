@@ -1,0 +1,84 @@
+// ----------------------------------------
+// Zaffo Template: LESS > Sections > Heroes
+// ----------------------------------------
+
+
+// ------------------------------
+// Feature General
+// ------------------------------
+
+
+// General
+.feature {
+    position: relative;
+}
+
+
+// Background Image
+.feature__background-image {
+	padding: 40px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	// Background Image
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: @color__secondary;
+		opacity: .7;
+	}
+}
+
+
+// Content Wrap
+.feature__content-wrap {
+	position: relative;
+	z-index: 1;
+	width: 90%;
+	max-width: @value__container--width;
+	margin: 0 auto;
+}
+
+
+// Typography
+.feature__headline {
+	font-size: 60px;
+	line-height: 66px;
+	font-weight: 700;
+	color: @color__feature-headline--text;
+
+	@media @tablet {
+		font-size: 50px;
+		line-height: 56px;
+	}
+	@media @mobile {
+		font-size: 40px;
+		line-height: 46px;
+	}
+}
+.feature__strapline {
+	.heading--6;
+	color: @color__feature-strapline--text;
+}
+.feature__button {
+	.button--large;
+	margin-top: 10px;
+	box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+
+
+
+// ------------------------------
+// Hero Specific Imports
+// ------------------------------
+
+
+@import "@{templateLocal}/less/sections/hero1.less";         // Header 1
+@import "@{templateLocal}/less/sections/hero-header1.less";  // Hero Header 1
+

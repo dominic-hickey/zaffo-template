@@ -1,0 +1,85 @@
+// ------------------------------------------
+// Zaffo Template: LESS > Sections > Header 1
+// ------------------------------------------
+
+
+// Header 1 General
+// ------------------------------
+
+
+.header--1 {
+    padding: 20px 0;
+
+    @media @mobile {
+        padding-bottom: 0;
+    }
+
+    .row {
+        @media @mobile {
+            .flex-direction(column);
+        }
+    }
+
+    // Header Item: Logo
+    .header__item--logo {
+        .flex-display;
+        .align-items(baseline);
+    }
+    .powered-by {
+        @media @tablet {
+            display: none;
+        }
+    }
+}
+
+
+
+
+// Header 1 Navigation
+// ------------------------------
+
+
+.header--1 {
+
+    // Nav Item
+    .nav-list__item {
+        display: inline-block;
+
+        @media @mobile {
+            &--button {
+                display: none;
+            }
+        }
+
+        // Button
+        &--button {
+            margin-left: 10px;
+        }
+    }
+
+
+    // Nav Link
+    .nav-list__link {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        line-height: 32px;
+        color: @color__h1--text;
+        letter-spacing: 0.04em;
+
+        @media @tablet {
+            padding: 16px 10px;
+            font-size: 16px;
+        }
+
+        &:hover,
+        &--selected {
+            color: @color__primary;
+
+            @media @tablet {
+            }
+        }
+    }
+
+}

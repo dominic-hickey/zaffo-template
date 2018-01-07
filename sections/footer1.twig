@@ -1,0 +1,113 @@
+<!-- Footer -->
+<footer class="footer  footer--1">
+	<div class="container">
+
+
+		<!-- Footer Content -->
+		<div class="row  row--gutters">
+			<div class="col  col--quarter">
+				<div class="footer__group">
+					<div class="footer__heading">
+						<h5 class="text-color--white">Sitemap</h5>
+					</div>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<a href="/about-cause" class="footer__link  {% if page.title == "About Cause" %}  footer__link--selected{% endif %}">About Cause</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/about-game" class="footer__link  {% if page.title == "About Game / Prize" %}  footer__link--selected{% endif %}">About Game / Prize</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="/play" class="footer__link  {% if page.title == "Play" %}  footer__link--selected{% endif %}">Play now</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col  col--quarter">
+				<div class="footer__group">
+					<div class="footer__heading">
+						<h5 class="text-color--white">Contact</h5>
+					</div>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<p class="paragraph--small"><span class="contact-type">t.</span> {{ profile.phone }}</p>
+						</li>
+						<li class="footer-list__item">
+							<p class="paragraph--small"><span class="contact-type">e.</span> <a href="mailto:{{ profile.email }}">{{ profile.email }}</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col  col--half">
+				<div class="row  row--gutters">
+					<div class="col  col--two-thirds">
+						<div class="footer__group  footer__group--payment">
+							<div class="footer__heading">
+								<h5 class="text-color--white">Payment Info</h5>
+							</div>
+							<div class="footer-list">
+								<p class="paragraph--xsmall">Please note that your payment has been processed by Capen Ltd Trading as Zaffo.com and your bank statement will include the following information: 'Zaffo.com- ZaffoCharity 0203 096 6265'.</p>
+							</div>
+						</div>
+						<div class="footer__group  footer__group--support">
+							<div class="footer__heading">
+								<h5 class="text-color--white">Extra Support</h5>
+							</div>
+							<div class="footer-list">
+								<p class="paragraph--xsmall">Is problem gambling affecting you, or those close to you? Freephone: 0808 8020 133</p>
+							</div>
+						</div>
+					</div>
+					<div class="col  col--third">
+						<div class="footer__group  footer__group--cards">
+							<div class="footer__heading">
+								<h5 class="text-color--white">Accepted Cards</h5>
+							</div>
+							<ul class="payment-list  footer-list">
+								<li class="payment-list__item">
+									<img src="{{ asset('/images/payment-icon--visa.svg') }}" alt="Visa">
+								</li>
+								<li class="payment-list__item">
+									<img src="{{ asset('/images/payment-icon--mastercard.svg') }}" alt="Mastercard">
+								</li>
+								<li class="payment-list__item">
+									<img src="{{ asset('/images/payment-icon--maestro.svg') }}" alt="Maestro">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Sub Footer -->
+		<div class="sub-footer">
+			<div class="row  row--aic  row--sb">
+
+				<div class="sub-footer-list__item">
+					<p class="paragraph--xsmall">Copyright {{ "now"|date("Y") }} © Zaffo. All Rights Reserved.</p>
+				</div>
+
+				<div class="sub-footer-list__item">
+					<ul class="legal-list">
+						<li class="legal-list__item">
+							<a href="/social-responsibility" class="legal-list__link">Social responsibility</a>
+						</li>
+						<li class="legal-list__item">
+							<a href="/acceptable-use-policy" class="legal-list__link">Acceptable use policy</a>
+						</li>
+						<li class="legal-list__item">
+							<a href="/terms-and-conditions" class="legal-list__link">Terms &amp; conditions</a>
+						</li>
+						<li class="legal-list__item">
+							<a href="/privacy-policy" class="legal-list__link">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</footer>

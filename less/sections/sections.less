@@ -1,0 +1,152 @@
+// ----------------------------------------
+// Zaffo Template: LESS > Sections
+// ----------------------------------------
+
+
+// ------------------------------
+// Section Colour Variations
+// ------------------------------
+
+
+// Lightest
+.section--lightest,
+.header--lightest {
+    background-color: white;
+
+    .card {
+		border: 1px solid @color__site--border;
+    }
+}
+
+// Light
+.section--light,
+.header--light {
+    background-color: #f5f5f5;
+}
+
+// Dark
+.section--dark,
+.header--dark {
+    background-color: @color__secondary;
+}
+
+
+
+
+// ------------------------------
+// Section Specific Styles
+// ------------------------------
+
+
+// About Cause 2
+// ------------------------------
+
+
+.section.section__about-cause--2 {
+	padding: 0;
+
+	.col {
+		.flex-display;
+		.align-items(center);
+		min-height: 500px;
+		padding-top: @value__section-spacing--desktop;
+		padding-bottom: @value__section-spacing--desktop;
+
+	    @media @tablet {
+	    	min-height: auto;
+	        padding-top: @value__section-spacing--tablet;
+	        padding-bottom: @value__section-spacing--tablet;
+	    }
+	    @media @mobile {
+	        padding-top: @value__section-spacing--mobile;
+	        padding-bottom: @value__section-spacing--mobile;
+	    }
+
+	    &:first-child {
+	    	border-right: 1px solid @color__site--border;
+
+	    	@media @tablet {
+				border-right: none;
+				border-bottom: 1px solid @color__site--border;
+	    	}
+	    }
+	}
+
+	.col__wrap {
+		max-width: 460px;
+		margin: 0 auto;
+
+		@media @tablet {
+			max-width: 90%;
+		}
+		@media @mobile {
+			max-width: 100%;
+		}
+	}
+}
+
+
+
+
+// About Game
+// ------------------------------
+
+
+.section__about-game {
+
+	// Card: Winner
+	.card--winner {
+		.card__sub-title {
+			border-color: @color__gold;
+			h5 {
+				color: @color__h1--text;
+			}
+		}
+		.button {
+			background-color: @color__gold;
+			color: @color__h1--text;
+		}
+	}
+
+	// Card Typography
+	.card__text h4 {
+		padding-bottom: 6px;
+	}
+}
+
+
+// Additional Text
+.additional-text {
+	padding-top: @value__section-spacing--desktop;
+	padding-bottom: 0;
+
+    @media @tablet {
+        padding-top: @value__section-spacing--tablet;
+    }
+    @media @mobile {
+        padding-top: @value__section-spacing--mobile;
+    }
+
+    &--center {
+    	max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+    }
+
+    .button-group {
+    	margin-top: 30px;
+    }
+}
+
+
+
+
+// About Game 2
+// ---------------
+
+.section__about-game--2 {
+	.additional-text {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}

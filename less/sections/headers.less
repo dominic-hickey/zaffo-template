@@ -1,0 +1,56 @@
+// ----------------------------------------
+// Zaffo Template: LESS > Sections > Header
+// ----------------------------------------
+
+
+// ------------------------------
+// Header General
+// ------------------------------
+
+
+.header {
+    position: relative;
+}
+
+
+
+
+// ------------------------------
+// Header Colour Variations
+// ------------------------------
+
+
+// Dark
+.header--dark {
+    .nav-list__link {
+        color: white;
+
+        &:hover {
+            color: @color__primary;
+        }
+    }
+}
+
+
+// Transparent
+.header--1.header--transparent {
+    .nav-list__link {
+        color: white;
+
+        &:hover {
+            color: @color__primary;
+        }
+    }
+}
+
+
+
+
+// ------------------------------
+// Header Specific Imports
+// ------------------------------
+
+
+@import "@{templateLocal}/less/sections/header1.less";  // Header 1
+@import "@{templateLocal}/less/sections/header2.less";  // Header 2
+

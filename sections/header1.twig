@@ -1,0 +1,35 @@
+<!-- Section: Header 1 -->
+<header class="header  header--lighest  header--1">
+	<div class="container">
+		<div class="row  row--sb  row--aic">
+
+			<div class="header__item  header__item--logo">
+				<div class="logo">
+					<a href="/" class="logo__link">
+						<img src="{{asset('/images/placeholder-logo.svg')}}" class="logo__image" alt="Logo">
+					</a>
+				</div>
+				<div class="powered-by">
+					<img src="{{ asset('/images/powered-by.png') }}" alt="Powered by Zaffo">
+				</div>
+			</div>
+
+			<div class="header__item  header__item--navigation">
+				<nav class="site-nav">
+					<ul class="site-nav__list">
+						<li class="nav-list__item">
+							<a href="/about-cause" class="nav-list__link  {% if page.title == "About Cause" %}  nav-list__link--selected{% endif %}">About Cause</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="/about-game" class="nav-list__link  {% if page.title == "About Game / Prize" %}  nav-list__link--selected{% endif %}">About Game / Prize</a>
+						</li>
+						<li class="nav-list__item  nav-list__item--button">
+							<a href="/play" class="button  button--outline">Play now</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+	</div>
+</header>

@@ -1,0 +1,129 @@
+{
+    "name":"Zaffo Template",
+    "widgetVersion": 2,
+    "thumbnail":"thumbnail.png",
+    "templateType":"standard",
+    "pageTypes": [ "home" ],
+    "screenshot":"screenshot.jpg",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#FBE6A1",
+            "color3":"#494949",
+            "color4":"#424D51",
+            "color5":"#424D51",
+            "color6":"#ffffff",
+            "color7":"#9AA7B5"
+        }
+    },
+    "fontSwatch": {
+       "title": "Karla / Merriweather",
+        "font1": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "32px",
+            "font-weight": "400",
+            "line-height": "54px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "22px",
+            "font-weight": "400",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,8%)"
+        },
+        "font7": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "color": "@color-swatch3",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-size": "38px",
+            "font-weight": "400",
+            "line-height": "48px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Bree Serif\", \"Merriweather\", Georgia, serif",
+            "font-size": "26px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        }
+    },
+    "styles": {
+        "colors": {
+            "color__primary": "#EB207B",
+            "color__secondary": "#414141"
+        },
+        "site": {
+            "color__body--background": "#e0e0e0"
+        },
+        "typography": {
+            "color__h1--text": "@color__secondary",
+            "color__p--text": "#8F8F8F"
+        },
+        "button": {
+            "color__button--background" : "@color__primary",
+            "color__button--text" : "#fff"
+        },
+        "feature": {
+            "color__feature-headline--text" : "#fff",
+            "color__feature-strapline--text" : "#EBEBEB"
+        }
+    }
+}

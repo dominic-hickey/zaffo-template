@@ -1,0 +1,252 @@
+// -------------------------------------
+// Template: Stylesheet
+// -------------------------------------
+
+
+#tdk-toolbar {
+    display: none!important;
+}
+
+
+// ------------------------------
+// #Table of Contents
+// ------------------------------
+
+//  #Imports
+//  #Site Styles
+//  #Header
+//  #Footer
+//  #Global Sections
+//  #Sections
+
+
+
+
+// -----------------------------
+// #Imports
+// -----------------------------
+
+
+@import "@{templateLocal}/less/reset.less";           // Reset
+@import "@{templateLocal}/less/variables.less";       // Variables
+@import "@{templateLocal}/less/typography.less";      // Typography
+@import "@{templateLocal}/less/buttons.less";         // Buttons
+@import "@{templateLocal}/less/mixins.less";          // Mixins
+@import "@{templateLocal}/less/grid.less";            // Grid
+@import "@{templateLocal}/less/editor-columns.less";  // Columns
+@import "@{templateLocal}/less/widgets.less";         // Widgets
+
+
+// Section Includes
+@import "@{templateLocal}/less/sections/sections.less";  // Sections
+@import "@{templateLocal}/less/sections/headers.less";   // Headers
+@import "@{templateLocal}/less/sections/footers.less";   // Footers
+@import "@{templateLocal}/less/sections/heroes.less";    // Heroes
+
+
+
+
+// ------------------------------
+// Site Styles
+// ------------------------------
+
+
+// Container
+.container {
+    width: 90%;
+    max-width: @value__container--width;
+    margin: 0 auto;
+
+    &--1000 {
+        max-width: @value__container--1000;
+    }
+    &--900 {
+        max-width: @value__container--900;
+    }
+}
+
+
+
+
+// ------------------------------
+// #Sections
+// ------------------------------
+
+
+.section {
+    width: 100%;
+    padding: @value__section-spacing--desktop 0;
+
+    @media @tablet {
+        padding: @value__section-spacing--tablet 0;
+    }
+    @media @mobile {
+        padding: @value__section-spacing--mobile 0;
+    }
+}
+
+
+// Section Title
+.section-title {
+    padding-bottom: @value__section-spacing--desktop;
+
+    @media @tablet {
+        padding-bottom: @value__section-spacing--tablet;
+    }
+    @media @mobile {
+        padding-bottom: @value__section-spacing--mobile;
+    }
+
+    p {
+        padding-bottom: 0;
+    }
+
+    &--center {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+// ------------------------------
+// #Global Elements
+// ------------------------------
+
+
+// Logo
+// ------------------------------
+
+
+.logo {
+    margin-right: 20px;
+    line-height: 0;
+
+    @media @mobile {
+        margin-right: 0;
+    }
+}
+.logo__link {
+    display: inline-block;
+    line-height: 0;
+}
+
+
+
+
+// Image
+// ------------------------------
+
+
+.image {
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+}
+.imagewidget__figure {
+    margin: 0;
+    line-height: 0;
+}
+.imagewidget__image-link {
+    display: inline-block;
+    line-height: 0;
+
+    @media @tablet {
+        max-width: 450px;
+    }
+}
+.imagewidget__caption {
+    display: none;
+}
+
+
+
+
+// Dual / Single Button Groups
+// ------------------------------
+
+
+.button-group {
+    margin-top: 16px;
+
+    @media @tablet {
+        margin-top: 10px;
+    }
+}
+
+// Dual Buttons
+.button-group--dual {
+    .flex-display;
+    .align-items(center);
+
+    .button-group__button:first-child {
+        margin-right: 14px;
+    }
+}
+
+// Outline Button
+.button-group__button--outline {
+    .button {
+        .button--outline;
+    }
+}
+
+// Plain Button
+.button-group__button--plain {
+    .button {
+        .button--plain;
+    }
+}
+
+
+
+
+// Card
+// ------------------------------
+
+
+.card {
+    width: 100%;
+    max-width: 380px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.05);
+
+    @media @tablet {
+        margin: 0 auto;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 210px;
+        object-fit: cover;
+        box-shadow: none;
+
+        @media @bp-1100 {
+            max-height: 190px;
+        }
+    }
+}
+
+// Card Text
+.card__text {
+    padding: 30px;
+
+    p {
+        padding-bottom: 0;
+        .paragraph--small;
+    }
+}
+
+// Card Alignment
+.card--align-center {
+    text-align: center;
+}
+
+
+
+
+// Powered By Logo
+// ------------------------------
+
+
+.powered-by {
+    line-height: 0;
+}

@@ -1,0 +1,36 @@
+<!-- Section: Header 2 -->
+<header class="header  header--light  header--2">
+	<div class="container">
+		<div class="row  row--sb  row--aic">
+
+			<div class="header__item  header__item--social">
+				{{widget('socialicons', 'header2-socialicons', {
+					'googleplus': 'profile',
+					'facebook': 'profile',
+					'twitter': 'profile'
+				})|raw}}
+			</div>
+
+			<div class="header__item  header__item--navigation">
+				<nav class="site-nav">
+					<ul class="site-nav__list">
+						<li class="nav-list__item">
+							<a href="/about-cause" class="nav-list__link  {% if page.title == "About Cause" %}  nav-list__link--selected{% endif %}">About Cause</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="/about-game" class="nav-list__link  {% if page.title == "About Game / Prize" %}  nav-list__link--selected{% endif %}">About Game / Prize</a>
+						</li>
+						<li class="nav-list__item">
+							<a href="/play" class="nav-list__link  nav-list__link--play">Play now</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__item  header__item--powered-by">
+				<img src="{{ asset('/images/powered-by--small.png') }}" alt="Powered by Zaffo">
+			</div>
+
+		</div>
+	</div>
+</header>
