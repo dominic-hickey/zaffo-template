@@ -7,11 +7,9 @@
 			<div class="row  row--sb  row--aic">
 
 				<div class="header__item  header__item--logo">
-					<div class="logo">
-						<a href="/" class="logo__link">
-							<img src="{{asset('/images/placeholder-logo--trans.svg')}}" class="logo__image" alt="Logo">
-						</a>
-					</div>
+					{{widget('logo', 'site-logo', {
+					  'defaultlogo': asset('images/placeholder-logo--trans.svg')
+					})|raw}}
 				</div>
 
 				<div class="header__item  header__item--navigation">
@@ -36,7 +34,7 @@
 
 
 	<!-- Feature -->
-	{{widget('feature', 'hero', {
+	{{widget('feature', 'header-hero1-feature', {
 		'header': 'Win up to £25,000 in our weekly lottery!',
 		'strapline': 'Tickets are just £1 and every one will help change lives.',
 		'defaultBgImg': asset('images/hero-image.jpg'),
