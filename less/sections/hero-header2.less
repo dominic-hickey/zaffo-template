@@ -1,0 +1,87 @@
+// -----------------------------------------------
+// Zaffo Template: LESS > Sections > Header Hero 2
+// -----------------------------------------------
+
+
+// Hero 2 General
+// ------------------------------
+
+
+.hero-header--2 {
+
+    // Hero Items
+    .hero-items {
+        .flex-display;
+        .flex-direction(column);
+        .align-items(center);
+        .justify-content(center);
+        height: 100%;
+        padding: 40px;
+        text-align: center;
+
+        @media @mobile {
+            padding: 30px;
+        }
+    }
+    .hero-item--logo {
+        margin-bottom: 50px;
+
+        @media @tablet {
+            margin-bottom: 30px;
+        }
+        @media @mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    // Background Image
+    .feature__background-image {
+        min-height: 720px;
+
+        @media @tablet {
+            min-height: 600px;
+        }
+        @media @mobile {
+            min-height: 200px;
+        }
+
+        &:before {
+            background-color: transparent;
+        }
+    }
+
+
+    // Content
+    .content-wrap {
+        display: none;
+    }
+
+
+    // Hero Typography
+    .hero-button {
+        margin-top: 20px;
+
+        .button {
+            .button--large;
+        }
+    }
+    .feature__headline {
+        font-size: 50px;
+        line-height: 56px;
+
+        @media @tablet {
+            font-size: 50px;
+            line-height: 56px;
+        }
+        @media @mobile {
+            font-size: 40px;
+            line-height: 46px;
+        }
+    }
+    .feature__strapline {
+        padding-bottom: 0;
+    }
+
+}
+

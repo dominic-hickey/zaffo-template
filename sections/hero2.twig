@@ -1,0 +1,30 @@
+<!-- Section: Hero 2 -->
+<div class="hero  hero--2">
+	<div class="container">
+
+		{{widget('feature', 'hero', {
+			'header': 'Win up to £25,000 in our weekly lottery!',
+			'strapline': 'Tickets are just £1 and every one will help change lives.',
+			'defaultBgImg': asset('images/hero-image.jpg'),
+			'showBtn': true,
+			'buttonText': 'Play now',
+			'action': 'internal',
+			'url': '/play'
+		})|raw}}
+
+		<div class="hero-typography">
+			<div class="hero-typography__text">
+				<h2 class="feature__headline  feature__headline--dark">{{ profile.headline }}</h2>
+				<h3 class="feature__strapline  feature__strapline--dark">{{ profile.strapline }}</h3>
+			</div>
+			<div class="hero-typography__button">
+				{{widget('button', 'hero2-button1', {
+					'text': 'Play now',
+					'action': 'internal',
+					'url': '/play'
+				})|raw}}
+			</div>
+		</div>
+
+	</div>
+</div>

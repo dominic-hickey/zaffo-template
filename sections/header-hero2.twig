@@ -1,0 +1,45 @@
+<!-- Section: Hero 2 -->
+<div class="hero  hero-header--2">
+
+	{% include "sections/header2.twig" %}
+
+	<div class="row">
+
+		<div class="col  col--half">
+			<div class="hero-items">
+				<div class="hero-item  hero-item--logo">
+					{{widget('logo', 'site-logo', {
+					  'defaultlogo': asset('images/placeholder-logo.svg')
+					})|raw}}
+				</div>
+				<div class="hero-item  hero-item--text">
+					<div class="hero-typography">
+						<h2 class="feature__headline  feature__headline--dark">{{ profile.headline }}</h2>
+						<h3 class="feature__strapline  feature__strapline--dark">{{ profile.strapline }}</h3>
+					</div>
+					<div class="hero-button">
+						{{widget('button', 'header-hero2-button1', {
+							'text': 'Play now',
+							'action': 'internal',
+							'url': '/play'
+						})|raw}}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col  col--half">
+			{{widget('feature', 'hero', {
+				'header': 'Win up to £25,000 in our weekly lottery!',
+				'strapline': 'Tickets are just £1 and every one will help change lives.',
+				'defaultBgImg': asset('images/hero-image.jpg'),
+				'showBtn': true,
+				'buttonText': 'Play now',
+				'action': 'internal',
+				'url': '/play'
+			})|raw}}
+		</div>
+
+	</div>
+
+</div>
