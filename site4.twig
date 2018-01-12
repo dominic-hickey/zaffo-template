@@ -1,0 +1,41 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- Page Content -->
+<div class="page">
+
+
+    <!-- Section 1: Header -->
+    {% include "sections/header1.twig" %}
+
+
+    <!-- Section 2: Hero -->
+    {% include "sections/hero2.twig" %}
+
+
+    <!-- Section 3: About Cause -->
+    <div class="section--light">
+        {% include "sections/about-cause3.twig" %}
+    </div>
+
+
+    <!-- Section 4: About Game -->
+    <div class="section--lightest">
+        {% include "sections/about-game2.twig" %}
+    </div>
+
+
+    <!-- Section 5: Zone -->
+    <div class="section--light">
+        {% include "sections/zone.twig" %}
+    </div>
+
+
+    <!-- Section 6: Footer -->
+    {% include "sections/footer1.twig" %}
+
+
+</div>
+
+{% endblock %}
