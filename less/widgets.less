@@ -218,21 +218,19 @@ textarea {
     }
     .account-link {
         .paragraph;
-        color: @color__primary;
+        color: @color__link--text;
     }
     .account-name {
         .paragraph;
-        color: @color__primary;
+        color: @color__link--text;
     }
     .tweet-content {
         word-wrap: break-word;
         word-break: break-word;
     }
-    .tweet-metadata {
-        font-size: 90%;
-        .timestamp, .via {
-            // color: lighten(@color__twitter-tweet--text, 15%);
-        }
+    .tweet-metadata,
+    .tweet-metadata a {
+        font-size: 14px;
     }
     .timestamp {
         margin-right: 5px;
@@ -745,7 +743,7 @@ textarea {
 .line__rule {
     margin: 20px 0;
     border: 0;
-    background-color: @color__primary;
+    background-color: @color__button--background;
 
     @media @mobile {
         margin: 10px 0;
