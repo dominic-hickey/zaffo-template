@@ -111,7 +111,8 @@
             "color__secondary": "#414141"
         },
         "site": {
-            "color__body--background": "#e0e0e0"
+            "color__body--background": "#e0e0e0",
+            "color__link--text": "@color__primary"
         },
         "typography": {
             "color__h1--text": "@color__secondary",
