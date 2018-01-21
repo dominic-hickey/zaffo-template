@@ -114,6 +114,9 @@
             "color__body--background": "#e0e0e0",
             "color__link--text": "@color__primary"
         },
+        "navigation": {
+            "color__navigation--text": "#000"
+        },
         "typography": {
             "color__h1--text": "@color__secondary",
             "color__p--text": "#8F8F8F"
