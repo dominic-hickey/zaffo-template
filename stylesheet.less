@@ -26,7 +26,6 @@
 // #Imports
 // -----------------------------
 
-// @import "@{templateCommon}/less/bk-less-framework-v8.less";           // Reset
 
 @import "@{templateLocal}/less/reset.less";           // Reset
 @import "@{templateLocal}/less/variables.less";       // Variables
@@ -36,6 +35,10 @@
 @import "@{templateLocal}/less/grid.less";            // Grid
 @import "@{templateLocal}/less/editor-columns.less";  // Columns
 @import "@{templateLocal}/less/widgets.less";         // Widgets
+
+
+// Theme Includes (1 or 2)
+@import "@{templateLocal}/less/themes/theme1.less";  // Selected Theme
 
 
 // Section Includes
@@ -154,9 +157,6 @@
 // ------------------------------
 
 
-.image {
-    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
-}
 .imagewidget__figure {
     margin: 0;
     line-height: 0;
@@ -219,11 +219,19 @@
 // ------------------------------
 
 
+.sub-title h5 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+}
+
+
 .card {
     width: 100%;
     max-width: 380px;
-    background-color: #fff;
-    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.05);
+    background-color: white;
 
     @media @tablet {
         margin: 0 auto;
@@ -274,7 +282,7 @@
 // ------------------------------
 
 
-.page-title {
+.section--page-title {
     h1 {
         padding-bottom: 0;
     }

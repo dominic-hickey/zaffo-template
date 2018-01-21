@@ -1,0 +1,190 @@
+// ---------------------------------------
+// Zaffo Template: LESS > Themes > Theme 2
+// ---------------------------------------
+
+
+// ------------------------------
+// Typography
+// ------------------------------
+
+
+h1, .heading--1 {
+    padding-bottom: 30px;
+    font-size: 60px;
+    line-height: 58px;
+
+    @media @tablet {
+        font-size: 50px;
+        line-height: 46px;
+    }
+    @media @mobile {
+        font-size: 44px;
+        line-height: 42px;
+    }
+}
+
+h2, .heading--2 {
+    padding-bottom: 20px;
+    font-size: 44px;
+    line-height: 52px;
+
+    @media @tablet {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    @media @mobile {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+h3, .heading--3 {
+    padding-bottom: 14px;
+    font-size: 38px;
+    line-height: 42px;
+
+    @media @tablet {
+        font-size: 34px;
+        line-height: 36px;
+    }
+    @media @mobile {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+h4, .heading--4 {
+    padding-bottom: 12px;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+h5, .heading--5 {
+    padding-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h6, .heading--6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+
+    @media @tablet {
+        font-size: 19px;
+        line-height: 32px;
+    }
+    @media @mobile {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+p, .paragraph {
+    padding-bottom: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.paragraph--small {
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+}
+
+.paragraph--xsmall {
+    padding-bottom: 0;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+}
+
+
+
+
+// ------------------------------
+// Elements
+// ------------------------------
+
+
+// Navigation
+// ------------------------------
+
+
+.nav-list__link {
+    font-size: 16px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+
+    @media @tablet {
+        padding: 16px 10px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+// Buttons
+// ------------------------------
+
+
+.button {
+    padding: 0 30px;
+    border-radius: 6px;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 1px;
+
+    @media @tablet {
+        font-size: 16px;
+    }
+}
+
+// Button Outline
+.button--outline {
+    box-shadow: inset 0 0 0 1px fade(@color__button--background, 50%);
+}
+
+// Button Large
+.button--large {
+    padding: 0 30px;
+    font-size: 17px;
+    line-height: 56px;
+}
+
+
+
+
+// Image
+// ------------------------------
+
+
+.image {
+    border-radius: 10px;
+    box-shadow: 0 0 0 7px white, 0 0 0 9px fade(@color__button--background, 30%);
+}
+
+
+
+// Card
+// ------------------------------
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px white, 0 0 0 2px fade(@color__button--background, 50%);
+}
+.section--lightest .card {
+}
+
+

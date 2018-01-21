@@ -1,0 +1,203 @@
+// ---------------------------------------
+// Zaffo Template: LESS > Themes > Theme 1
+// ---------------------------------------
+
+
+// ------------------------------
+// Typography
+// ------------------------------
+
+
+h1, .heading--1 {
+	padding-bottom: 30px;
+	font-size: 60px;
+	line-height: 58px;
+
+	@media @tablet {
+		font-size: 50px;
+		line-height: 46px;
+	}
+	@media @mobile {
+		font-size: 44px;
+		line-height: 42px;
+	}
+}
+
+h2, .heading--2 {
+	padding-bottom: 10px;
+	font-size: 44px;
+	line-height: 52px;
+
+	@media @tablet {
+		font-size: 40px;
+		line-height: 46px;
+	}
+	@media @mobile {
+		font-size: 36px;
+		line-height: 42px;
+	}
+}
+
+h3, .heading--3 {
+	padding-bottom: 14px;
+	font-size: 38px;
+	line-height: 42px;
+
+	@media @tablet {
+		font-size: 34px;
+		line-height: 36px;
+	}
+	@media @mobile {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+h4, .heading--4 {
+	padding-bottom: 12px;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+h5, .heading--5 {
+	padding-bottom: 16px;
+	font-family: @font-swatch1-font-family;
+	font-size: 13px;
+	line-height: 16px;
+	color: @color__grey;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h6, .heading--6 {
+	font-family: @font-swatch5-font-family;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 36px;
+	color: @color__grey;
+	letter-spacing: 0.03em;
+
+	@media @tablet {
+		font-size: 19px;
+		line-height: 32px;
+	}
+	@media @mobile {
+		font-size: 17px;
+		line-height: 30px;
+	}
+}
+
+p, .paragraph {
+	font-family: @font-swatch5-font-family;
+	padding-bottom: 20px;
+	font-size: 18px;
+	line-height: 30px;
+	color: @color__grey;
+	letter-spacing: 0.03em;
+}
+
+.paragraph--small {
+	padding-bottom: 0;
+	font-family: @font-swatch5-font-family;
+	font-size: 16px;
+	line-height: 28px;
+	color: @color__grey;
+	letter-spacing: 0.04em;
+}
+
+.paragraph--xsmall {
+	padding-bottom: 0;
+	font-family: @font-swatch5-font-family;
+	font-size: 13px;
+	line-height: 22px;
+	color: @color__grey;
+	letter-spacing: 0.04em;
+}
+
+
+
+
+// ------------------------------
+// Elements
+// ------------------------------
+
+
+// Navigation
+// ------------------------------
+
+
+.nav-list__link {
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+
+    @media @tablet {
+        padding: 16px 10px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+// Buttons
+// ------------------------------
+
+
+.button {
+    padding: 0 30px;
+    border-radius: 100px;
+    box-shadow: 2px 5px 6px 0 rgba(0,0,0,0.05);
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+
+    @media @tablet {
+        font-size: 16px;
+    }
+}
+
+// Button Outline
+.button--outline {
+    box-shadow: inset 0 0 0 2px @color__button--background;
+}
+
+// Button Large
+.button--large {
+	padding: 0 50px;
+    font-size: 20px;
+    line-height: 64px;
+
+    @media @tablet {
+		padding: 0 40px;
+	    font-size: 18px;
+	    line-height: 56px;
+	}
+}
+
+
+
+
+// Image
+// ------------------------------
+
+
+.image {
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+// Card
+// ------------------------------
+
+
+.card {
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.05);
+}
+.section--lightest .card {
+	border: 1px solid @color__site--border;
+}

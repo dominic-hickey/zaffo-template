@@ -20,7 +20,7 @@
     "fontSwatch": {
        "title": "Karla / Merriweather",
         "font1": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "32px",
             "font-weight": "400",
             "line-height": "54px",
@@ -28,7 +28,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "24px",
             "font-weight": "400",
             "line-height": "36px",
@@ -36,7 +36,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "22px",
             "font-weight": "400",
             "line-height": "42px",
@@ -44,7 +44,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "36px",
@@ -52,7 +52,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "27px",
@@ -60,7 +60,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "26px",
@@ -71,7 +71,7 @@
             "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font7": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "27px",
@@ -81,7 +81,7 @@
             "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "38px",
             "font-weight": "400",
             "line-height": "48px",
@@ -89,7 +89,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "27px",
@@ -97,7 +97,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Source Sans Pro\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Roboto\", Verdana, Geneva, sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "32px",
@@ -107,15 +107,15 @@
     },
     "styles": {
         "colors": {
-            "color__primary": "#EB207B",
-            "color__secondary": "#414141"
+            "color__primary": "#35d88e",
+            "color__secondary": "#424242"
         },
         "site": {
             "color__body--background": "#e0e0e0",
             "color__link--text": "@color__primary"
         },
         "navigation": {
-            "color__navigation--text": "#424242"
+            "color__navigation--text": "@color__secondary"
         },
         "typography": {
             "color__h1--text": "@color__secondary",
